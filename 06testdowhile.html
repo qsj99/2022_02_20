@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05testwhile.html</title>
+<style>*{font-size: 16pt;}</style>
+<script>
+    function mygugudan(){
+        var b=0, dan=7;
+        // while(조건){7*2=14}
+        document.write(dan, '구구단 출력 do~while 반복문 예제 <br>');
+        while(b<10){
+            b=b+1; //b=1일 때 16라인 처리 , , , ~~ b=9일 때 16라인 처리 
+            document.write(b ,'*' , dan , '=' , b*dan , '<br>');
+        }
+    }//end
+
+    var k=0, gg=8;
+    function mygame(){  
+        //파이썬은 단항 ++/-- 없음, switch제어 없음, do~while(조건)없음
+        //자바스크립트 반복문에서 for 권장, while 권장 
+        document.write('do while 반복문 선처리 후 조건 <br>');
+    do{
+            k=k+1;
+            document.write(gg,'*',k , '=',(k*gg) , '<br>');
+        }while(k < 9);
+    }//end
+</script>
+</head>
+<body>
+    <h2>06testdowhile.html</h2>
+    <button onclick="mygugudan();"> while구구단 출력 </button>
+    <button onclick="mygame();"> do~while구구단 출력 </button>
+    <div id="display"></div>
+</body>
+</html>

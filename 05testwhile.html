@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05testwhile.html</title>
+<style>*{font-size: 2opt;}</style>
+<script>
+    function mygugudan(){
+        var dan=7, k=0, gop=0;
+        // while(조건){7*2=14}
+        document.write(dan, '구구단 출력 while 반복문 예제 <br>');
+        while(k<10){
+            k=k+1;
+            // gop=k*dan;
+            document.write(k ,'*' , dan , '=' , k*dan , '<br>');
+        }
+    }//end
+</script>
+</head>
+<body>
+    <h2>05testwhile.html</h2>
+    <button onclick="mygugudan();"> while구구단 출력 </button>
+    <div id="display"></div>
+</body>
+</html>
